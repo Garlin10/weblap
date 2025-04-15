@@ -506,12 +506,12 @@ p a:hover {
 }
 .footer p {
 	clear:both;
-	color:#717171;
-	font-size:14px;
+	color:#dfdfdf;
+	font-size:28px;
 	margin:0;
 	padding:0 0 110px;
 	text-align:center;
-	text-shadow:0 1px 0 #cfcfcf;
+	text-shadow:0 1px 0 #ffffff;
 }
 .corner-image {
 	position: absolute;
