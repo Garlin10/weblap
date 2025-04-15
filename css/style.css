@@ -515,7 +515,7 @@ p a:hover {
 }
 .corner-image {
 	position: absolute;
-	width: 200px; /* increased size */
+	width: 180px; /* increased size */
 	height: auto;
 	z-index: 9999;
 	transform: rotate(10deg); /* default rotation */
@@ -523,13 +523,13 @@ p a:hover {
   
   /* Specific rotations for each image */
   .top-left {
-	top: 200px;
-	left: 134px;
+	top: 0px;
+	left: 0px;
 	transform: rotate(-15deg); /* tilt to the left */
   }
   
   .top-right {
-	top: 200px;
+	top: 0px;
 	right: 0;
 	transform: rotate(15deg); /* tilt to the right */
   }
