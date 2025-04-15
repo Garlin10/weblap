@@ -4,6 +4,7 @@ body {
 	background:url("../images/ChatGPT Image Apr 15, 2025, 06_54_23 PM.png");
 	margin:0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 p a {
 	outline:none;
