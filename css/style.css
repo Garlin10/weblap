@@ -1,10 +1,13 @@
 /* Website template by freewebsitetemplates.com */
 /*------------------------- Layout styles ------------------------*/
+html, body {
+	overflow-x: hidden;
+	max-width: 100%;
+}
 body {
 	background:url("../images/ChatGPT Image Apr 15, 2025, 06_54_23 PM.png");
 	margin:0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	overflow-x: hidden;
 }
 p a {
 	outline:none;
@@ -516,22 +519,20 @@ p a:hover {
 }
 .corner-image {
 	position: absolute;
-	width: 180px; /* increased size */
+	width: 180px;
 	height: auto;
 	z-index: 9999;
-	transform: rotate(10deg); /* default rotation */
-  }
-  
-  /* Specific rotations for each image */
-  .top-left {
-	top: 0px;
-	left: 0px;
-	transform: rotate(-15deg); /* tilt to the left */
-  }
-  
-  .top-right {
-	top: 0px;
-	right: 0;
-	transform: rotate(15deg); /* tilt to the right */
-  }
-  
+	max-width: 100%;
+	pointer-events: none; /* optional, if you don’t want them to be interactive */
+}
+.top-left {
+	top: 0;
+	left: 20px; /* kicsit balra */
+	transform: rotate(-15deg);
+}
+.top-right {
+	top: 0;
+	right: 20px; /* kicsit jobbra, de beljebb tolva */
+	transform: rotate(15deg);
+}
+
