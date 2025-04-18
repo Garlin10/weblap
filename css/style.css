@@ -1,538 +1,670 @@
 /* Website template by freewebsitetemplates.com */
 /*------------------------- Layout styles ------------------------*/
-html, body {
-	overflow-x: hidden;
-	max-width: 100%;
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 body {
-	background:url("../images/ChatGPT Image Apr 15, 2025, 06_54_23 PM.png");
-	margin:0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url("../images/ChatGPT Image Apr 15, 2025, 06_54_23 PM.png");
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 p a {
-	outline:none;
+    outline: none;
 }
 p a:hover {
-	color:#cecccc;
+    color: #cecccc;
 }
 /*------------------------- Header ------------------------*/
 .header {
-	background:url(../images/bg-header1.png) repeat-x 0 0;
-	overflow:hidden;
-	min-height: 199px;
+    background: url(../images/bg-header1.png) repeat-x 0 0;
+    overflow: hidden;
+    min-height: 199px;
 }
 .header div {
-	/*background:url(../images/bg-header2.png) no-repeat center 0;*/
-	margin:0 auto;
-	width:960px;
-	min-height:199px;
+    /*background:url(../images/bg-header2.png) no-repeat center 0;*/
+    margin: 0 auto;
+    width: 960px;
+    min-height: 199px;
 }
 .header div ul {
-	list-style:none;
-	margin:0 0 0 150px;
-	overflow:hidden;
-	padding:2px 0 0;
-	width:685px;
+    list-style: none;
+    margin: 0 0 0 150px;
+    overflow: hidden;
+    padding: 2px 0 0;
+    width: 685px;
 }
 .header div ul li:first-child {
-	margin:0;
+    margin: 0;
 }
 .header div ul li {
-	float:left;
-	height:59px;
-	margin:0 0 0 20px;
-	text-align:center;
-	width:97px;
+    float: left;
+    height: 59px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    width: 97px;
 }
 .header div ul li.selected {
-	background:url(../images/bg-selected-menu.png) no-repeat;
+    background: url(../images/bg-selected-menu.png) no-repeat;
 }
-.header div ul li.selected a, .header div ul li a:hover {
-	color:#fff;
-	text-shadow:-1px -1px 1px #5B5B5B, 1px 1px 1px #5B5B5B, 1px -1px 1px #5B5B5B, -1px 1px 1px #5B5B5B;
+.header div ul li.selected a,
+.header div ul li a:hover {
+    color: #fff;
+    text-shadow:
+        -1px -1px 1px #5b5b5b,
+        1px 1px 1px #5b5b5b,
+        1px -1px 1px #5b5b5b,
+        -1px 1px 1px #5b5b5b;
 }
 .header div ul li a {
-	color:#959595;
-	display:block;
-	font-size:14px;
-	line-height:45px;
-	outline:medium none;
-	text-decoration:none;
-	text-transform:uppercase;
+    color: #959595;
+    display: block;
+    font-size: 14px;
+    line-height: 45px;
+    outline: medium none;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .header div a#logo {
-	display:block;
-	margin:25px auto 0;
-	width:760px;
+    display: block;
+    margin: 25px auto 0;
+    width: 760px;
 }
 .header div a.logo {
-	display:block;
-	margin:	25px auto 46px;
-	width:760px;
+    display: block;
+    margin: 25px auto 46px;
+    width: 760px;
 }
 .header div > img {
-	display:block;
-	height:565px;
-	position:absolute;
-	top:188px;
+    display: block;
+    height: 565px;
+    position: absolute;
+    top: 454px;
 }
-.header div a#logo img, .header div a.logo img {
-	border:0;
-	display:block;
-	height:auto;
-	position:static;
+.header div a#logo img,
+.header div a.logo img {
+    border: 0;
+    display: block;
+    height: auto;
+    position: static;
 }
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px darkred,
+        0 0 82px darkred,
+        0 0 92px darkred,
+        0 0 102px darkred,
+        0 0 151px darkred;
+}
+
+/* body {
+  font-size: 18px;
+  font-family: "Sacramento", sans-serif;
+  background-color: #010a01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.header div h1,
+.header div h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.header div h1 {
+    font-size: 6.2rem;
+    animation: flicker 1.5s infinite alternate;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    margin-bottom: 100px;
+    box-shadow:
+        0 0 0.2rem #fff,
+        0 0 0.2rem #fff,
+        0 0 2rem darkred,
+        0 0 0.8rem darkred,
+        0 0 2.8rem darkred,
+        inset 0 0 1.3rem darkred;
+}
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px darkred,
+            0 0 80px darkred,
+            0 0 90px darkred,
+            0 0 100px darkred,
+            0 0 150px darkred;
+    }
+
+    20%,
+    /* 24%, */
+    55% {
+        text-shadow: none;
+    }
+}
+
+/* @keyframes pulsate {
+
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #bc13fe,
+      0 0 80px #bc13fe,
+      0 0 90px #bc13fe,
+      0 0 100px #bc13fe,
+      0 0 150px #bc13fe;
+
+  }
+
+  0% {
+
+    text-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 10px #bc13fe,
+    0 0 45px #bc13fe,
+    0 0 55px #bc13fe,
+    0 0 70px #bc13fe,
+    0 0 80px #bc13fe;
+
+} */
 /*------------------------- Body ------------------------*/
 .body {
-	background:url(../images/bg-content.png);
+    background: url(../images/bg-content.png);
 }
 .body.home {
-	margin:268px 0 0;
+    margin: 268px 0 0;
 }
 .body div {
-	background:url(../images/border-content.png) repeat-x 0 0;
+    background: url(../images/border-content.png) repeat-x 0 0;
 }
 .body div div {
-	background:none;
-	margin:0 auto;
-	width:960px;
+    background: none;
+    margin: 0 auto;
+    width: 960px;
 }
 .body div div.section {
-	background:none;
-	overflow:hidden;
-	padding:287px 0 138px;
+    background: none;
+    overflow: hidden;
+    padding: 287px 0 138px;
 }
 .body div div.section div:first-child {
-	margin:0;
-	padding-left:10px;
-	text-align:center;
-	width:auto;
+    margin: 0;
+    padding-left: 10px;
+    text-align: center;
+    width: auto;
 }
 .body div div.section div:first-child h3 {
-	width:210px;
+    width: 210px;
 }
 .body div div.section div:first-child ul {
-	list-style:none;
-	margin:0;
-	overflow:hidden;
-	padding:0;
-	width:210px;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 210px;
 }
 .body div div.section div:first-child ul li {
-	background:url(../images/separator.png) repeat-x left top;
-	margin:0;
-	padding:12px 0 16px;
-	width:210px;
+    background: url(../images/separator.png) repeat-x left top;
+    margin: 0;
+    padding: 12px 0 16px;
+    width: 210px;
 }
 .body div div.section div:first-child ul li p {
-	color:#c9c9c9;
-	font-size:18px;
-	line-height:24px;
-	margin:0;
-	letter-spacing:0.05em;
+    color: #c9c9c9;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    letter-spacing: 0.05em;
 }
 .body div div.section div:first-child ul li span {
-	color:#c9c9c9;
-	display:block;
-	font-size:14px;
-	padding-top:5px;
+    color: #c9c9c9;
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
 }
 .body div div.section div h3 {
-	font-size:30px;
-	font-weight:400;
-	margin:0 0 18px;
-	text-align:center;
-	text-transform:uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 18px;
+    text-align: center;
+    text-transform: uppercase;
 }
 .body div div.section div {
-	float:left;
-	margin-left:30px;
-	width:700px;
+    float: left;
+    margin-left: 30px;
+    width: 700px;
 }
 .body div div.section div h3 a {
-	color:#fff;
-	text-decoration:none;
-	text-shadow:-2px -2px 2px #5B5B5B, 2px 2px 2px #5B5B5B, 2px -2px 2px #5B5B5B, -2px 2px 2px #5B5B5B;
-	letter-spacing:0.075em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow:
+        -2px -2px 2px #5b5b5b,
+        2px 2px 2px #5b5b5b,
+        2px -2px 2px #5b5b5b,
+        -2px 2px 2px #5b5b5b;
+    letter-spacing: 0.075em;
 }
 .body div div.section div ul {
-	list-style:none;
-	margin:0;
-	overflow:hidden;
-	padding:5px 0 0;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 0 0;
 }
 .body div div.section div ul li {
-	float:left;
-	margin-left:20px;
-	width:150px;
+    float: left;
+    margin-left: 20px;
+    width: 150px;
 }
 .body div div.section div ul li a img {
-	border:0;
-	display:block;
-	width:150px;
+    border: 0;
+    display: block;
+    width: 150px;
 }
 .body div div.section div ul li h4 {
-	font-weight:400;
-	line-height:24px;
-	margin:10px 0 0;
-	text-align:center;
-	text-transform:uppercase;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 0 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 .body div div.section div ul li h4 span {
-	color:#c9c9c9;
-	text-decoration:none;
-	font-size:14px;
+    color: #c9c9c9;
+    text-decoration: none;
+    font-size: 14px;
 }
 .body div div.section div.last {
-	margin-left:10px;
-	width:210px;
+    margin-left: 10px;
+    width: 210px;
 }
 .body div div.section div.last h3 {
-	margin-left:30px;
+    margin-left: 30px;
 }
 .body div div.section div.last ul li {
-	background:url(../images/separator.png) repeat-x left top;
-	line-height:24px;
-	margin:0 0 0 20px;
-	padding:10px 0 13px;
-	text-align:center;
-	width:200px;
+    background: url(../images/separator.png) repeat-x left top;
+    line-height: 24px;
+    margin: 0 0 0 20px;
+    padding: 10px 0 13px;
+    text-align: center;
+    width: 200px;
 }
 .body div div.section div.last ul li a {
-	color:#c9c9c9;
-	font-size:14px;
-	text-decoration:none;
-	text-transform:uppercase;
-	line-height:24px;
-	letter-spacing:0.075em;
+    color: #c9c9c9;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 0.075em;
 }
 .body div div.events {
-	min-height:1001px;
+    min-height: 1001px;
 }
 .body div div.events ul {
-	list-style:none outside none;
-	margin:0 0 36px;
-	overflow:hidden;
-	padding:52px 10px 0;
-	width:940px;
+    list-style: none outside none;
+    margin: 0 0 36px;
+    overflow: hidden;
+    padding: 52px 10px 0;
+    width: 940px;
 }
 .body div div.events ul li {
-	float:left;
-	margin:0 0 0 35px;
-	width:290px;
+    float: left;
+    margin: 0 0 0 35px;
+    width: 290px;
 }
 .body div div.events ul li h3 {
-	text-align:center;
-	color:#c9c9c9;
-	font-size:20px;
-	text-transform:uppercase;
-	font-weight:normal;
-	font-size:20px;
-	line-height:30px;
-	margin:0 0 18px;
-	letter-spacing:0.05em;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    color: #c9c9c9;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 18px;
+    letter-spacing: 0.05em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .body div div.events ul li p {
-	color:#c9c9c9;
-	font-size:14px;
-	line-height:24px;
-	margin:22px 0 0;
-	text-align:justify;
-	padding: 0;
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 22px 0 0;
+    text-align: justify;
+    padding: 0;
 }
 .body div div.events p {
-	color:#c9c9c9;
-	font-size:14px;
-	line-height:24px;
-	margin:0;
-	padding: 0 10px;
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 10px;
 }
 .body div div.games {
-	min-height:1001px;
-	padding:0 10px;
-	width:940px;
+    min-height: 1001px;
+    padding: 0 10px;
+    width: 940px;
 }
 .body div div.games p:first-child {
-	margin:0;
-	padding:49px 0 0;
+    margin: 0;
+    padding: 49px 0 0;
 }
 .body div div.games h4 {
-	color:#c9c9c9;
-	font-size:20px;
-	margin:8px 0 0;
-	line-height:30px;
-	letter-spacing:0.05em;
-	text-transform:uppercase;
+    color: #c9c9c9;
+    font-size: 20px;
+    margin: 8px 0 0;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 .body div div.games p {
-	color:#c9c9c9;
-	font-size:14px;
-	line-height:30px;
-	margin:2px 0 0;
-	text-align:justify;
-	letter-spacing:0.05em
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 2px 0 0;
+    text-align: justify;
+    letter-spacing: 0.05em;
 }
 .body div div.menu ul {
-	list-style:none;
-	margin:0 auto 24px;
-	overflow:hidden;
-	padding:0 35px;
-	width:890px;
+    list-style: none;
+    margin: 0 auto 24px;
+    overflow: hidden;
+    padding: 0 35px;
+    width: 890px;
 }
 .body div div.menu {
-	min-height:1001px;
+    min-height: 1001px;
 }
 .body div div.menu ul li {
-	float:left;
-	margin:0 0 0 70px;
-	text-align:center;
-	width:250px;
+    float: left;
+    margin: 0 0 0 70px;
+    text-align: center;
+    width: 250px;
 }
 .body div div.menu ul li h3 {
-	color:#c9c9c9;
-	font-size:20px;
-	margin:51px 0 25px;
-	text-transform:uppercase;
-	line-height:30px;
-	letter-spacing:0.05em;
+    color: #c9c9c9;
+    font-size: 20px;
+    margin: 51px 0 25px;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 0.05em;
 }
 .body div div.menu ul ul {
-	padding:0;
-	width:250px;
+    padding: 0;
+    width: 250px;
 }
 .body div div.menu ul ul li:first-child {
-	background:none;
-	padding:0 0 14px;
+    background: none;
+    padding: 0 0 14px;
 }
 .body div div.menu ul ul li {
-	background:url(../images/border.png) repeat-x left top;
-	margin:0;
-	padding:0 0 9px;
-	width:300px;
+    background: url(../images/border.png) repeat-x left top;
+    margin: 0;
+    padding: 0 0 9px;
+    width: 300px;
 }
 .body div div.menu ul ul li p {
-	color:#c9c9c9;
-	float:left;
-	font-size:14px;
-	line-height:24px;
-	margin:10px 0 0;
-	padding:0;
-	letter-spacing:0.05em;
-	width:auto;
-	float:left;
+    color: #c9c9c9;
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+    width: auto;
+    float: left;
 }
 .body div div.menu ul ul li span {
-	color:#c9c9c9;
-	display:block;
-	font-size:14px;
-	line-height:24px;
-	margin:10px 0 0 30px;
-	float:left;
+    color: #c9c9c9;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0 0 30px;
+    float: left;
 }
 .body div div.menu ul ul li:first-child span {
-	margin:0 0 0 30px!important;
+    margin: 0 0 0 30px !important;
 }
 .body div div.menu p {
-	color:#c9c9c9;
-	font-size:14px;
-	line-height:24px;
-	margin:0;
-	padding:0 35px 138px;
-	width:890px;
-	letter-spacing:0.05em;
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 35px 138px;
+    width: 890px;
+    letter-spacing: 0.05em;
 }
 .body div div.about {
-	min-height:951px;
-	padding: 50px 10px 0;
-	width:940px;
+    min-height: 951px;
+    padding: 50px 10px 0;
+    width: 940px;
 }
 .body div div.about h4 {
-	color:#c9c9c9;
-	font-size:20px;
-	margin:0;
-	line-height:30px;
-	letter-spacing:0.075em;
-	text-transform:uppercase;
+    color: #c9c9c9;
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
 }
 .body div div.about h5 {
-	color:#c9c9c9;
-	font-size:14px;
-	line-height:30px;
-	letter-spacing:0.075em;
-	text-transform:uppercase;
-	margin:0;
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin: 0;
 }
 .body div div.about p {
-	color:#c9c9c9;
-	font-size:14px;
-	line-height:30px;
-	margin:2px 0 58px;
-	letter-spacing:0.075em;
-	text-align: justify;
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 2px 0 58px;
+    letter-spacing: 0.075em;
+    text-align: justify;
 }
 .body div div.blog {
-	overflow:hidden;
-	min-height:951px;
-	padding:50px 10px 0;
-	width:940px;
+    overflow: hidden;
+    min-height: 951px;
+    padding: 50px 10px 0;
+    width: 940px;
 }
 .body div div.blog div:first-child {
-	margin:0;
-	width:705px;
-	float:left;
+    margin: 0;
+    width: 705px;
+    float: left;
 }
 .body div div.blog div:first-child h4 {
-	color:#c9c9c9;
-	font-size:20px;
-	margin:0 0 32px;
-	text-transform:uppercase;
-	line-height:30px;
-	letter-spacing:0.075em;
-	font-weight:bold;
+    color: #c9c9c9;
+    font-size: 20px;
+    margin: 0 0 32px;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 0.075em;
+    font-weight: bold;
 }
 .body div div.blog div:first-child p {
-	color:#c9c9c9;
-	font-size:14px;
-	line-height:30px;
-	margin:0 0 30px;
-	padding:0;
-	letter-spacing:0.075em;
-	text-align:justify;
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 0 30px;
+    padding: 0;
+    letter-spacing: 0.075em;
+    text-align: justify;
 }
 .body div div.blog div {
-	float:right;
-	width:190px;
+    float: right;
+    width: 190px;
 }
 .body div div.blog div div:first-child {
-	margin:63px 0 33px;
-	width:230px;
+    margin: 63px 0 33px;
+    width: 230px;
 }
 .body div div.blog div div {
-	float:none;
-	margin:0;
-	width:230px;
+    float: none;
+    margin: 0;
+    width: 230px;
 }
 .body div div.blog div div h3 {
-	color:#c9c9c9;
-	font-size:14px;
-	margin:0;
-	line-height:30px;
-	letter-spacing:0.075em;
-	text-transform:uppercase;
+    color: #c9c9c9;
+    font-size: 14px;
+    margin: 0;
+    line-height: 30px;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
 }
 .body div div.blog div div ul {
-	color:#c9c9c9;
-	list-style:disc;
-	margin:0;
-	padding:6px 0 0;
+    color: #c9c9c9;
+    list-style: disc;
+    margin: 0;
+    padding: 6px 0 0;
 }
 .body div div.blog div div ul li:first-child {
-	margin-top:0;
+    margin-top: 0;
 }
 .body div div.blog div div ul li {
-	margin:13px 0 0 14px;
-	font-size:10px;
+    margin: 13px 0 0 14px;
+    font-size: 10px;
 }
 .body div div.blog div div ul li a {
-	color:#c9c9c9;
-	font-size:14px;
-	text-decoration:none;
+    color: #c9c9c9;
+    font-size: 14px;
+    text-decoration: none;
 }
 .body div div.blog div div ul li a:hover {
-	text-decoration:underline;
+    text-decoration: underline;
 }
 .body div div.section div:first-child ul li:first-child {
-	background:none;
-	padding-top:0;
+    background: none;
+    padding-top: 0;
 }
 .body div div.section div.last ul li:first-child {
-	margin:0 0 0 20px;
-	background:none;
-	padding-top:0;
+    margin: 0 0 0 20px;
+    background: none;
+    padding-top: 0;
 }
-.body div div.section div:first-child ul li p a, .body div div.events ul li p a, .body div div.events p a, .body div div.games p a, .body div div.menu p a, .body div div.about p a, .body div div.blog div:first-child p a {
-	color:#c9c9c9;
+.body div div.section div:first-child ul li p a,
+.body div div.events ul li p a,
+.body div div.events p a,
+.body div div.games p a,
+.body div div.menu p a,
+.body div div.about p a,
+.body div div.blog div:first-child p a {
+    color: #c9c9c9;
 }
-.body div div.section div ul li:first-child, .body div div.events ul li:first-child, .body div div.menu ul li:first-child, .body div div.menu ul ul li:first-child p, .body div div.menu ul ul li:first-child span {
-	margin:0;
+.body div div.section div ul li:first-child,
+.body div div.events ul li:first-child,
+.body div div.menu ul li:first-child,
+.body div div.menu ul ul li:first-child p,
+.body div div.menu ul ul li:first-child span {
+    margin: 0;
 }
-.body div div.section div ul li a img:hover, .body div div.events ul li a img:hover {
-	filter:alpha(opacity=80);/* Needed for IE7 */
-	opacity:0.8;
+.body div div.section div ul li a img:hover,
+.body div div.events ul li a img:hover {
+    filter: alpha(opacity=80); /* Needed for IE7 */
+    opacity: 0.8;
 }
-.body div div.section div ul li h4 a:hover, .body div div.section div.last ul li a:hover, .body div div.events ul li h3 a:hover {
-	color:#fff;
-	text-shadow:-1px -1px 1px #5B5B5B, 1px 1px 1px #5B5B5B, 1px -1px 1px #5B5B5B, -1px 1px 1px #5B5B5B;
+.body div div.section div ul li h4 a:hover,
+.body div div.section div.last ul li a:hover,
+.body div div.events ul li h3 a:hover {
+    color: #fff;
+    text-shadow:
+        -1px -1px 1px #5b5b5b,
+        1px 1px 1px #5b5b5b,
+        1px -1px 1px #5b5b5b,
+        -1px 1px 1px #5b5b5b;
 }
-.body div div.events ul li a img, .body div div.menu ul ul li:first-child {
-	border:0;
+.body div div.events ul li a img,
+.body div div.menu ul ul li:first-child {
+    border: 0;
 }
-.body div div.events ul li p a:hover, .body div div.events p a:hover, .body div div.games p a:hover, .body div div.menu p a:hover, .body div div.about p a:hover, .body div div.blog div:first-child p a:hover, .body div div.blog div div ul li a:hover {
-	color:#cecccc;
+.body div div.events ul li p a:hover,
+.body div div.events p a:hover,
+.body div div.games p a:hover,
+.body div div.menu p a:hover,
+.body div div.about p a:hover,
+.body div div.blog div:first-child p a:hover,
+.body div div.blog div div ul li a:hover {
+    color: #cecccc;
 }
 /*------------------------- Footer ------------------------*/
 .footer {
-	background:url(../images/bg-footer.png) repeat-x left top;
-	padding:38px 0 0;
+    background: url(../images/bg-footer.png) repeat-x left top;
+    padding: 38px 0 0;
 }
 .footer div.connect {
-	margin:0 auto 29px;
-	overflow:hidden;
-	width:167px;
+    margin: 0 auto 29px;
+    overflow: hidden;
+    width: 167px;
 }
 .footer div.connect a {
-	display:block;
-	float:left;
-	height:48px;
-	text-indent:-99999px;
-	width:47px;
+    display: block;
+    float: left;
+    height: 48px;
+    text-indent: -99999px;
+    width: 47px;
 }
 .footer div.connect a#twitter {
-	background:url(../images/icons.png) no-repeat 0 -200px;
+    background: url(../images/icons.png) no-repeat 0 -200px;
 }
 .footer div.connect a#twitter:hover {
-	background:url(../images/icons.png) no-repeat 0 -250px;
+    background: url(../images/icons.png) no-repeat 0 -250px;
 }
 .footer div.connect a#facebook {
-	background:url(../images/icons.png) no-repeat 0 0;
-	margin:0 0 0 13px;
+    background: url(../images/icons.png) no-repeat 0 0;
+    margin: 0 0 0 13px;
 }
 .footer div.connect a#facebook:hover {
-	background:url(../images/icons.png) no-repeat 0 -50px;
+    background: url(../images/icons.png) no-repeat 0 -50px;
 }
 .footer div.connect a#googleplus {
-	background:url(../images/icons.png) no-repeat 0 -100px;
-	margin:0 0 0 13px;
+    background: url(../images/icons.png) no-repeat 0 -100px;
+    margin: 0 0 0 13px;
 }
 .footer div.connect a#googleplus:hover {
-	background:url(../images/icons.png) no-repeat 0 -150px;
+    background: url(../images/icons.png) no-repeat 0 -150px;
 }
 .footer p {
-	clear:both;
-	color:#dfdfdf;
-	font-size:28px;
-	margin:0;
-	padding:0 0 110px;
-	text-align:center;
-	text-shadow:0 1px 0 #ffffff;
+    clear: both;
+    color: #dfdfdf;
+    font-size: 28px;
+    margin: 0;
+    padding: 0 0 110px;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
 }
 .corner-image {
-	position: absolute;
-	width: 180px;
-	height: auto;
-	z-index: 9999;
-	max-width: 100%;
-	pointer-events: none; /* optional, if you don’t want them to be interactive */
+    position: absolute;
+    width: 180px;
+    height: auto;
+    z-index: 9999;
+    max-width: 100%;
+    pointer-events: none; /* optional, if you don’t want them to be interactive */
 }
 .top-left {
-	top: 0;
-	left: 20px; /* kicsit balra */
-	transform: rotate(-15deg);
+    top: 142px;
+    left: 20px; /* kicsit balra */
+    transform: rotate(-15deg);
 }
 .top-right {
-	top: 0;
-	right: 20px; /* kicsit jobbra, de beljebb tolva */
-	transform: rotate(15deg);
+    top: 56px;
+    right: 20px; /* kicsit jobbra, de beljebb tolva */
+    transform: rotate(15deg);
 }
-
