@@ -605,51 +605,28 @@ p a:hover {
     color: #cecccc;
 }
 /*------------------------- Footer ------------------------*/
-.footer {
-    background: url(../images/bg-footer.png) repeat-x left top;
-    padding: 38px 0 0;
+.footer .connect-icons {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    margin: 40px 0 30px; /* <-- TOP | horizontal | BOTTOM */
 }
-.footer div.connect {
-    margin: 0 auto 29px;
-    overflow: hidden;
-    width: 167px;
-}
-.footer div.connect a {
-    display: block;
-    float: left;
-    height: 48px;
-    text-indent: -99999px;
-    width: 47px;
-}
-.footer div.connect a#twitter {
-    background: url(../images/icons.png) no-repeat 0 -200px;
-}
-.footer div.connect a#twitter:hover {
-    background: url(../images/icons.png) no-repeat 0 -250px;
-}
-.footer div.connect a#facebook {
-    background: url(../images/icons.png) no-repeat 0 0;
-    margin: 0 0 0 13px;
-}
-.footer div.connect a#facebook:hover {
-    background: url(../images/icons.png) no-repeat 0 -50px;
-}
-.footer div.connect a#googleplus {
-    background: url(../images/icons.png) no-repeat 0 -100px;
-    margin: 0 0 0 13px;
-}
-.footer div.connect a#googleplus:hover {
-    background: url(../images/icons.png) no-repeat 0 -150px;
-}
-.footer p {
-    clear: both;
-    color: #dfdfdf;
+
+.footer .connect-icons a {
     font-size: 28px;
-    margin: 0;
-    padding: 0 0 110px;
-    text-align: center;
-    text-shadow: 0 1px 0 #ffffff;
+    color: white;
+    transition: color 0.3s ease;
+    text-decoration: none;
 }
+
+.footer .connect-icons a:hover {
+    color: #1877f2; /* Facebook blue */
+}
+
+.footer .connect-icons a.fa-instagram:hover {
+    color: #e1306c; /* Instagram pink */
+}
+
 .corner-image {
     position: absolute;
     width: 180px;
