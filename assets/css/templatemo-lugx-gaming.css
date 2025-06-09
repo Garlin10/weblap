@@ -1019,7 +1019,9 @@ CTA Style
 }
 
 .cta::after {
-  background-image: url(../images/cta-bg.jpg);
+  background-image: url(../images/lanosch_hoodie.jpg);
+  background-size: cover;
+  background-position: center;
   max-width: 550px;
   max-height: 510px;
   width: 100%;
@@ -1032,6 +1034,7 @@ CTA Style
   top: 0;
   z-index: -1;
 }
+
 
 .cta .shop {
   margin-top: 80px;

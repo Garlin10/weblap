@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <title>Lugx Gaming Shop HTML5 Template</title>
 
@@ -57,10 +58,10 @@ https://templatemo.com/tm-589-lugx-gaming
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="shop.html">Our Shop</a></li>
-                      <li><a href="product-details.html">Product Details</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="#">Sign In</a></li>
+                      <li><a href="konzol_berles.html">Konzol bérlés</a></li>
+                      <li><a href="bajnoksagok.html">Bajnokságok</a></li>
+                      <li><a href="kozosssegunk.html">Közösségunk</a></li>
+                      <li><a href="https://www.facebook.com/lanoschbme" target="_blank">Rendezvényeink</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -83,7 +84,7 @@ https://templatemo.com/tm-589-lugx-gaming
             <p id="eventDescription">Rendezvény betöltése...</p>
             <p id="eventTime" style="color: white; font-weight: bold;"></p>
             <div class="search-input main-button">
-              <a href="https://www.facebook.com/lanoschbme" target="_blank">
+              <a id="eventLinkButton" href="https://www.facebook.com/lanoschbme" target="_blank">
                 További infók!
               </a>
             </div>
@@ -92,7 +93,9 @@ https://templatemo.com/tm-589-lugx-gaming
         </div>
         <div class="col-lg-4 offset-lg-2">
           <div class="right-image">
+            <a id="eventLinkImage" href="https://www.facebook.com/lanoschbme" target="_blank">
             <img id="eventImage" src="assets/images/Lanosch.png" alt="">
+          </a>
             <span id="eventStatus" class="offer">Vége</span>
           </div>
         </div>
@@ -109,7 +112,7 @@ https://templatemo.com/tm-589-lugx-gaming
               <div class="image">
                 <img src="assets/images/featured-01.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>Free Storage</h4>
+              <h4>Rendezvényeink</h4>
             </div>
           </a>
         </div>
@@ -119,7 +122,7 @@ https://templatemo.com/tm-589-lugx-gaming
               <div class="image">
                 <img src="assets/images/featured-02.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>User More</h4>
+              <h4>Konzolbérlés</h4>
             </div>
           </a>
         </div>
@@ -129,7 +132,7 @@ https://templatemo.com/tm-589-lugx-gaming
               <div class="image">
                 <img src="assets/images/featured-03.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>Reply Ready</h4>
+              <h4>Bajnokságok</h4>
             </div>
           </a>
         </div>
@@ -139,7 +142,7 @@ https://templatemo.com/tm-589-lugx-gaming
               <div class="image">
                 <img src="assets/images/featured-04.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>Easy Layout</h4>
+              <h4>Közösségunk</h4>
             </div>
           </a>
         </div>
@@ -152,71 +155,81 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6>Trending</h6>
-            <h2>Trending Games</h2>
+            <h2>Rendezvényeink</h2>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="main-button">
-            <a href="shop.html">View All</a>
-          </div>
         </div>
+  
+        <!-- Event 1 -->
         <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>$28</em>$20</span>
+          <a href="#" id="eventLink1" target="_blank" style="text-decoration: none;">
+            <div class="item">
+              <div class="thumb">
+                <img id="eventImage1" src="assets/images/Lanosch.png" alt="">
+                <span class="price" id="eventDate1"></span>
+              </div>
+              <div class="down-content">
+                <span class="category">Nyitás</span>
+                <h4 id="eventTitle1"></h4>
+              </div>
             </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
+  
+        <!-- Event 2 -->
         <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt=""></a>
-              <span class="price">$44</span>
+          <a href="#" id="eventLink2" target="_blank" style="text-decoration: none;">
+            <div class="item">
+              <div class="thumb">
+                <img id="eventImage2" src="assets/images/Lanosch.png" alt="">
+                <span class="price" id="eventDate2"></span>
+              </div>
+              <div class="down-content">
+                <span class="category">Nyitás</span>
+                <h4 id="eventTitle2"></h4>
+              </div>
             </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
+  
+        <!-- Event 3 -->
         <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt=""></a>
-              <span class="price"><em>$64</em>$44</span>
+          <a href="#" id="eventLink3" target="_blank" style="text-decoration: none;">
+            <div class="item">
+              <div class="thumb">
+                <img id="eventImage3" src="assets/images/Lanosch.png" alt="">
+                <span class="price" id="eventDate3"></span>
+              </div>
+              <div class="down-content">
+                <span class="category">Nyitás</span>
+                <h4 id="eventTitle3"></h4>
+              </div>
             </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
+  
+        <!-- Event 4 -->
         <div class="col-lg-3 col-md-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt=""></a>
-              <span class="price">$32</span>
+          <a href="#" id="eventLink4" target="_blank" style="text-decoration: none;">
+            <div class="item">
+              <div class="thumb">
+                <img id="eventImage4" src="assets/images/Lanosch.png" alt="">
+                <span class="price" id="eventDate4"></span>
+              </div>
+              <div class="down-content">
+                <span class="category">Nyitás</span>
+                <h4 id="eventTitle4"></h4>
+              </div>
             </div>
-            <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
+  
       </div>
     </div>
   </div>
-
+  
+<!-- 
   <div class="section most-played">
     <div class="container">
       <div class="row">
@@ -359,7 +372,7 @@ https://templatemo.com/tm-589-lugx-gaming
       </div>
     </div>
   </div>
-  
+   -->
   <div class="section cta">
     <div class="container">
       <div class="row">
@@ -368,13 +381,14 @@ https://templatemo.com/tm-589-lugx-gaming
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>Our Shop</h6>
-                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                  <h6>Szeretnél minket megkeresni?</h6>
+                  <h2>Van valami jó ötleted?</h2>
                 </div>
-                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                <p>Írj nekünk bátran egy emailt! Fetsd ki pár mondatban mire gondoltál és mi megpróbáljuk megvalósítani!</p>
                 <div class="main-button">
-                  <a href="shop.html">Shop Now</a>
+                  <a href="mailto:lanosch@sch.bme.hu?subject=Ötletem van&body=Sziasztok!%0D%0A%0D%0AA következő ötletem lenne...">Ötlet doboz</a>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -384,15 +398,16 @@ https://templatemo.com/tm-589-lugx-gaming
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>NEWSLETTER</h6>
-                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
-                </div>
-                <div class="search-input">
-                  <form id="subscribe" action="#">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
-                    <button type="submit">Subscribe Now</button>
-                  </form>
-                </div>
+                  <h6>Szeretnél közénk tartozni?</h6>
+                  
+                  
+                <p style="font-weight: 600;">A Lanosch amellett, hogy diákkör egy közösség ahova érdemes tartozni! Jelentkezz hozzánk!</p>
+                <div class="search-input main-button">
+                  <a href="mailto:lanosch@sch.bme.hu?subject=Jelentkezés a Lanoschba&body=Sziasztok!%0D%0ASzeretnék csatlakozni a Lanosch diákkörhöz!%0D%0ANevem: %0D%0AÉvfolyam: %0D%0AKedvenc játék: " class="main-button" style="display: inline-block;">
+                    Jelentkezek!
+                  </a>
+                              
+              </div>
               </div>
             </div>
           </div>
@@ -403,11 +418,28 @@ https://templatemo.com/tm-589-lugx-gaming
 
   <footer>
     <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+      <div class="col-lg-12 text-center">
+        
+        <div style="padding-top: 20px;">
+          <a href="https://www.instagram.com/lanosch.gaming/" target="_blank" style="color: white; margin: 0 10px;">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://www.facebook.com/lanoschbme" target="_blank" style="color: white; margin: 0 10px;">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="https://www.twitch.tv/lanosch" target="_blank" style="color: white; margin: 0 10px;">
+            <i class="fab fa-twitch fa-lg"></i>
+          </a>
+          <p style="color: white;">
+            Copyright © 2026 Lanosch Videójáték Diákkör. All rights reserved.
+            &nbsp;&nbsp;
+            <a rel="nofollow" href="https://templatemo.com" target="_blank" style="color: white;">Design: TemplateMo</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
+  
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
@@ -419,6 +451,8 @@ https://templatemo.com/tm-589-lugx-gaming
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/load_images.js"></script>
   <script src="assets/js/event-image-animation.js"></script>
+  <script src="assets/js/event-trending.js"></script>
+
 
   </body>
 </html>
