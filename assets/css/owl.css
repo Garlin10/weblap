@@ -6,6 +6,16 @@
 /*
  *  Owl Carousel - Core
  */
+.test-banner {
+  background: #ff3333; /* bright red to stand out */
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  z-index: 9999;
+}
 .owl-carousel {
   display: none;
   width: 100%;
